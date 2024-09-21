@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    max-width: 1170px; /* Set a maximum width */
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --main-color: hsla(173, 86%, 31%, 1);
+    --secondary-color:hsla(42, 100%, 55%, 1);
+    --font-color: hsla(221, 43%, 11%, 1);
+
+}
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* start header */
+header{
+    background-color: var(--main-color);
+height: 86px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-links li{
+    display: inline-block;
+    padding: 30px 25px;
+    
+}
+.nav-links li a{
+    color: hsla(0, 0%, 100%, 1);
+    transition: all 0.3s ease 0s;
+}
+.nav-info{
+    color: hsla(0, 0%, 100%, 1);
+padding-bottom: 5px;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+.burger{
+    display: none;
+    color: hsla(0, 0%, 100%, 1) ;
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+@media (max-width:768px){
+    .burger{
+        display: block;
+        padding-top: 24px;
+        position: relative;
+        z-index: 10;
+    }
+    .navHover , .nav-links {
+        display: none;
+    }
+    .nav-info{
+        display: none;
+    }
+    .burger:hover .navHover{
+        display: block;
+        position: absolute;
+        top: 86px;
+        right: 15px;
+        background-color:rgb(255, 250, 244);
+        z-index: 99;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* end header */
+
+/* start landing */
+.landing{
+    background-image: url(../images/solar-panels-meadow\ 1.png);
+    ba
+}
+/* end landing */
